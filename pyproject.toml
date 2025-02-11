@@ -11,12 +11,20 @@ python = "^3.12"
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.1.1"
 flake8 = "^7.0.0"
+pre-commit = "^4.1.0"
+ruff = "^0.9.6"
 
 [tool.pytest.ini_options]
 addopts = "--doctest-modules"
 
 [tool.poetry.scripts]
 my_package_cli = 'my_package.console:run'
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+extend-select = ["E501", "I", "F", "E", "C90", "N", "UP", "A", "DTZ", "Q"]
 
 [build-system]
 requires = ["poetry-core"]

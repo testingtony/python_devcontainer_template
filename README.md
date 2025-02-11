@@ -3,7 +3,7 @@
 Python project using [Poetry](https://python-poetry.org/) for a developing in a devcontainer.
 
 It contains GitHub action workflows for trunk-based development. i.e. always work and push on "trunk". Pushes that fail either flake8 or pytest will
-be rolled back. 
+be rolled back.
 
 ## How to configure
 
