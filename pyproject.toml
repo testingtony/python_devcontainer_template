@@ -12,12 +12,22 @@ python = "^3.12"
 pytest = "^8.1.1"
 flake8 = "^7.0.0"
 pre-commit = "^4.1.0"
+ruff = "^0.9.6"
 
 [tool.pytest.ini_options]
 addopts = "--doctest-modules"
 
 [tool.poetry.scripts]
 my_package_cli = 'my_package.console:run'
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+# Add the `line-too-long` rule to the enforced rule set. By default, Ruff omits rules that
+# overlap with the use of a formatter, like Black, but we can override this behavior by
+# explicitly adding the rule.
+extend-select = ["E501"]
 
 [build-system]
 requires = ["poetry-core"]
