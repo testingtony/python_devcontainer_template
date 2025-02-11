@@ -24,10 +24,7 @@ my_package_cli = 'my_package.console:run'
 line-length = 120
 
 [tool.ruff.lint]
-# Add the `line-too-long` rule to the enforced rule set. By default, Ruff omits rules that
-# overlap with the use of a formatter, like Black, but we can override this behavior by
-# explicitly adding the rule.
-extend-select = ["E501", "I"]
+extend-select = ["E501", "I", "F", "E", "C90", "N", "UP", "A", "DTZ", "Q"]
 
 [build-system]
 requires = ["poetry-core"]
