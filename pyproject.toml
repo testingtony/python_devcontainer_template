@@ -22,9 +22,17 @@ my_package_cli = 'my_package.console:run'
 
 [tool.ruff]
 line-length = 120
+indent-width = 4
 
 [tool.ruff.lint]
-extend-select = ["E501", "I", "F", "E", "C90", "N", "UP", "A", "DTZ", "Q"]
+extend-select = ["E501", "D", "B", "SIM", "PTH", "I", "F", "E", "C90", "N", "UP", "A", "DTZ", "Q"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
+
 
 [build-system]
 requires = ["poetry-core"]
