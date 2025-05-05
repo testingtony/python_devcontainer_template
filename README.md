@@ -11,6 +11,7 @@ be rolled back.
   * change `name` and `description` sections
   * update/remove the `tool.poetry.scripts` section
 * rename the `template` folder to match the project name
+* in a terminal, run `pre-commit install` _optional_
 * make a thing
 
 ### Optional
